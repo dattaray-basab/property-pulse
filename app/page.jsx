@@ -4,6 +4,7 @@ import HomeProperties from '@/components/HomeProperties';
 import FeaturedProperties from '@/components/FeaturedProperties';
 
 const HomePage = () => {
+  console.log(process.env.MONGODB_URI);
   return (
     <>
       <Hero />

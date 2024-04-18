@@ -49,8 +49,7 @@ const PropertyPage = () => {
       {loading && <Spinner loading={loading} />}
       {!loading && property && (
         <>
-          src={`/images/properties/${property.images[0]}`}
-          {/* <PropertyHeaderImage image={property.images[0]} /> */} // !!!
+          {/* <PropertyHeaderImage image={property.images[0]} // !!! 3 />  */}
           <PropertyHeaderImage
             image={`/images/properties/${property.images[0]}`}
           />

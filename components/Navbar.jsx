@@ -21,12 +21,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const setAuthProviders = async () => {
-      const res = await getProviders();
-      setProviders(res);
+      const response = await getProviders();
+      setProviders(response);
     };
 
     setAuthProviders();
   }, []);
+
 
   return (
     <nav className='bg-blue-700 border-b border-blue-500'>

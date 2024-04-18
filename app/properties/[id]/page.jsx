@@ -49,7 +49,11 @@ const PropertyPage = () => {
       {loading && <Spinner loading={loading} />}
       {!loading && property && (
         <>
-          <PropertyHeaderImage image={property.images[0]} />
+          src={`/images/properties/${property.images[0]}`}
+          {/* <PropertyHeaderImage image={property.images[0]} /> */} // !!!
+          <PropertyHeaderImage
+            image={`/images/properties/${property.images[0]}`}
+          />
           <section>
             <div className='container m-auto py-6 px-6'>
               <Link
@@ -60,7 +64,6 @@ const PropertyPage = () => {
               </Link>
             </div>
           </section>
-
           <section className='bg-blue-50'>
             <div className='container m-auto py-10 px-6'>
               <div className='grid grid-cols-1 md:grid-cols-70/30 w-full gap-6'>

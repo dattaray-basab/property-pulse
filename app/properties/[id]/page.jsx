@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import { fetchProperty } from '@/utils/requests';
 import PropertyHeaderImage from '@/components/PropertyHeaderImage';
 import PropertyDetails from '@/components/PropertyDetails';
-import PropertyImages from '@/components/PropertyImages';
+// import PropertyImages from '@/components/PropertyImages';
 import BookmarkButton from '@/components/BookmarkButton';
 import PropertyContactForm from '@/components/PropertyContactForm';
 import ShareButtons from '@/components/ShareButtons';
@@ -76,7 +76,7 @@ const PropertyPage = () => {
               </div>
             </div>
           </section>
-          <PropertyImages images={property.images} />
+          {/* <PropertyImages images={property.images} /> */}
         </>
       )}
     </>
